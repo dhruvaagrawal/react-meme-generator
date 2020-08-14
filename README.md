@@ -1,5 +1,5 @@
 # react-meme-generator
-=======
+
 ### *This project allows the user to generate a meme. The user gets the option to either write whatever text they want on a randomly generated meme, or they can select an image of their choosing and write the text on top of it.*
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -70,4 +70,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
->>>>>>> Initialize project using Create React App
+Initialize project using Create React App
