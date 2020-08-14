@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Header from './Header'
+import MemeGenerator from './MemeGenerator'
+import MemeReel from './MemeReel'
+import './style.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  constructor() {
+    super()
+    this.state = {
+      showMemeReel: false,
+      showMemeGenerator: false
+    }
+  }
+
+  render() {
+    if (this.state.showMemeGenerator) { 
+      return (
+        <div>
+          <Header />
+          <MemeGenerator />
+      </div>
+      )
+    } else if (this.state.showMemeReel) {
+      return (
+        <div>
+          <Header />
+          <MemeReel />
+        </div>
+      )
+    }
+    return (
+      <div>
+        <Header />
+        <div className="div-option">
+            <button onClick={() => this.setState({ showMemeReel: !this.state.showMemeReel })}>Select your background</button>
+            <button onClick={() => this.setState({ showMemeGenerator: !this.state.showMemeGenerator })}>Generate a random meme</button>
+        </div>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
