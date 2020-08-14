@@ -1,4 +1,4 @@
-# react-meme-generator
+# Meme Generator App
 
 ### *This project allows the user to generate a meme. The user gets the option to either write whatever text they want on a randomly generated meme, or they can select an image of their choosing and write the text on top of it.*
 
